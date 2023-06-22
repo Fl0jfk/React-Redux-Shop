@@ -1,8 +1,9 @@
-import {configureStore, combineReducers} from '@reduxjs/toolkit';
+import {configureStore, combineReducers, applyMiddleware} from '@reduxjs/toolkit';
 import phoneReducer from './phone/reducerPhone';
 import tvReducer from './tv/reducerTv';
 import tabletReducer from './tablet/reducerTablet';
 import commentReducer from './comments/reducerComments';
+import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
     phone: phoneReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
 })
 
 const store = configureStore ({
-    reducer: {rootReducer},
+    middleware: thunk,
+    reducer: {rootReducer}
 });
 export default store;

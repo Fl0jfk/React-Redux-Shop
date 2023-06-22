@@ -20,3 +20,9 @@ const loadApiCommentsError = error => {
     }
 }
 
+export const apiCall = () => {
+    return () => {
+        
+    }
+}
+
