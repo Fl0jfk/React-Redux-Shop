@@ -1,6 +1,5 @@
 import phone from '../images/phone.png';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { buyPhone } from '../redux/phone/actionPhone';
 import { useState } from 'react';
  

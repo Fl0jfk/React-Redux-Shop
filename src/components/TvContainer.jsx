@@ -1,6 +1,5 @@
 import tv from '../images/tv.png';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { buyTv } from '../redux/tv/actionTv';
 import { useState } from 'react';
  
