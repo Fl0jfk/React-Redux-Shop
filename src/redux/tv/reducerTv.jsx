@@ -1,18 +1,19 @@
-import { BUY_TV } from "../type"
+import { BUY_TV } from './type'
 
 const initialStateTv = {
-    tvs: 20
+    tvs: 10
 }
 
 const tvReducer = (state = initialStateTv, action) => {
     switch (action.type) {
-        case BUY_TV: 
+        case BUY_TV:
             return {
                 ...state,
                 tvs: state.tvs - action.payload
             }
-        default :return state
+    
+        default: return state
     }
 }
 
-export default tvReducer
+export default tvReducer;
